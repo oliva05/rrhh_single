@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPlanillasCalculo" targetNamespace="http://tempuri.org/dsPlanillasCalculo.xsd" xmlns:mstns="http://tempuri.org/dsPlanillasCalculo.xsd" xmlns="http://tempuri.org/dsPlanillasCalculo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPlanillasCalculo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPlanillasCalculo" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPlanillasCalculo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="search_employee" msprop:Generator_RowClassName="search_employeeRow" msprop:Generator_RowEvHandlerName="search_employeeRowChangeEventHandler" msprop:Generator_RowDeletedName="search_employeeRowDeleted" msprop:Generator_RowDeletingName="search_employeeRowDeleting" msprop:Generator_RowEvArgName="search_employeeRowChangeEvent" msprop:Generator_TablePropName="search_employee" msprop:Generator_RowChangedName="search_employeeRowChanged" msprop:Generator_UserTableName="search_employee" msprop:Generator_RowChangingName="search_employeeRowChanging" msprop:Generator_TableClassName="search_employeeDataTable" msprop:Generator_TableVarName="tablesearch_employee">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Name_" msprop:Generator_UserColumnName="Name_" msprop:Generator_ColumnPropNameInTable="Name_Column" msprop:Generator_ColumnPropNameInRow="Name_" msprop:Generator_ColumnVarNameInTable="columnName_" type="xs:string" minOccurs="0" />
+              <xs:element name="Seleccionado" msprop:Generator_UserColumnName="Seleccionado" msprop:Generator_ColumnPropNameInTable="SeleccionadoColumn" msprop:Generator_ColumnPropNameInRow="Seleccionado" msprop:Generator_ColumnVarNameInTable="columnSeleccionado" type="xs:boolean" minOccurs="0" />
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnVarNameInTable="columnid" type="xs:int" minOccurs="0" />
+              <xs:element name="concat_" msprop:Generator_UserColumnName="concat_" msprop:Generator_ColumnPropNameInTable="concat_Column" msprop:Generator_ColumnPropNameInRow="concat_" msprop:Generator_ColumnVarNameInTable="columnconcat_" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="planillas_status" msprop:Generator_RowEvHandlerName="planillas_statusRowChangeEventHandler" msprop:Generator_RowDeletedName="planillas_statusRowDeleted" msprop:Generator_RowDeletingName="planillas_statusRowDeleting" msprop:Generator_RowEvArgName="planillas_statusRowChangeEvent" msprop:Generator_TablePropName="planillas_status" msprop:Generator_RowChangedName="planillas_statusRowChanged" msprop:Generator_RowChangingName="planillas_statusRowChanging" msprop:Generator_TableClassName="planillas_statusDataTable" msprop:Generator_RowClassName="planillas_statusRow" msprop:Generator_TableVarName="tableplanillas_status" msprop:Generator_UserTableName="planillas_status">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:Caption="Id" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_UserColumnName="id" type="xs:int" minOccurs="0" />
+              <xs:element name="descripcion" msdata:Caption="Descripción" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="seleccionado" msdata:Caption="Seleccionado" msprop:Generator_ColumnPropNameInRow="seleccionado" msprop:Generator_ColumnPropNameInTable="seleccionadoColumn" msprop:Generator_ColumnVarNameInTable="columnseleccionado" msprop:Generator_UserColumnName="seleccionado" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

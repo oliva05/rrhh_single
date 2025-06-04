@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReportesBancoPlanilla" targetNamespace="http://tempuri.org/dsReportesBancoPlanilla.xsd" xmlns:mstns="http://tempuri.org/dsReportesBancoPlanilla.xsd" xmlns="http://tempuri.org/dsReportesBancoPlanilla.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReportesBancoPlanilla" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsReportesBancoPlanilla" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsReportesBancoPlanilla">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="detalle_reporte_banco" msprop:Generator_RowEvHandlerName="detalle_reporte_bancoRowChangeEventHandler" msprop:Generator_RowDeletedName="detalle_reporte_bancoRowDeleted" msprop:Generator_RowDeletingName="detalle_reporte_bancoRowDeleting" msprop:Generator_RowEvArgName="detalle_reporte_bancoRowChangeEvent" msprop:Generator_TablePropName="detalle_reporte_banco" msprop:Generator_RowChangedName="detalle_reporte_bancoRowChanged" msprop:Generator_UserTableName="detalle_reporte_banco" msprop:Generator_RowChangingName="detalle_reporte_bancoRowChanging" msprop:Generator_RowClassName="detalle_reporte_bancoRow" msprop:Generator_TableClassName="detalle_reporte_bancoDataTable" msprop:Generator_TableVarName="tabledetalle_reporte_banco">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fila" msdata:Caption="Número" msprop:Generator_ColumnPropNameInTable="filaColumn" msprop:Generator_ColumnPropNameInRow="fila" msprop:Generator_UserColumnName="fila" msprop:Generator_ColumnVarNameInTable="columnfila" type="xs:int" minOccurs="0" />
+              <xs:element name="codigo" msdata:Caption="Código" msprop:Generator_ColumnPropNameInTable="codigoColumn" msprop:Generator_ColumnPropNameInRow="codigo" msprop:Generator_UserColumnName="codigo" msprop:Generator_ColumnVarNameInTable="columncodigo" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" msdata:Caption="Empleado" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_UserColumnName="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" type="xs:string" minOccurs="0" />
+              <xs:element name="salario_neto" msdata:Caption="Salario neto" msprop:Generator_ColumnPropNameInTable="salario_netoColumn" msprop:Generator_ColumnPropNameInRow="salario_neto" msprop:Generator_UserColumnName="salario_neto" msprop:Generator_ColumnVarNameInTable="columnsalario_neto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="id" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_UserColumnName="id" type="xs:int" minOccurs="0" />
+              <xs:element name="employee_id" msprop:Generator_ColumnPropNameInRow="employee_id" msprop:Generator_ColumnPropNameInTable="employee_idColumn" msprop:Generator_ColumnVarNameInTable="columnemployee_id" msprop:Generator_UserColumnName="employee_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
