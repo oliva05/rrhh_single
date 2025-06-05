@@ -25,7 +25,7 @@ namespace LOSA
                 DbName = "ALOSY";
 
 
-            lblServerName.Text = "Server Name: " + Globals.LOSA_ServerName + "  DB: " + DbName + "  DB:"+ DbNamePlanilla;
+            lblServerName.Text = "Server Name: " + Globals.RRHH_ServerName + "  DB: " + DbName + "  DB:"+ DbNamePlanilla;
             frm = new frmMain();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Normal;
