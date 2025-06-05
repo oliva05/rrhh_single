@@ -25,7 +25,7 @@ namespace LOSA.Clases
                 string sql = "dbo.sp_get_versionBuild_notificacionesV2";
                 DataOperations dp = new DataOperations();
 
-                using (SqlConnection cnx = new SqlConnection(dp.ConnectionStringLOSA))
+                using (SqlConnection cnx = new SqlConnection(dp.ConnectionStringRRHH))
                 {
                     cnx.Open();
 
@@ -59,7 +59,7 @@ namespace LOSA.Clases
                 DataOperations dp = new DataOperations();
 
 
-                using (SqlConnection cnx = new SqlConnection(dp.ConnectionStringLOSA))
+                using (SqlConnection cnx = new SqlConnection(dp.ConnectionStringRRHH))
                 {
                     cnx.Open();
 

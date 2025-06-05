@@ -33,7 +33,7 @@ namespace LOSA.MigracionACS.Ttracer.Reportes
         {
             try
             {
-                SqlConnection conn = new SqlConnection(dp.ConnectionStringCostos);
+                SqlConnection conn = new SqlConnection(dp.ConnectionStringRRHH);
                 conn.Open();
 
                 string sql = @"EXEC	[dbo].[sp_get_resumen_desechos_bascula]
