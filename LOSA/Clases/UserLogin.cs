@@ -87,7 +87,7 @@ namespace LOSA.Clases
             try
             {
                 DataOperations dp = new DataOperations();
-                SqlConnection con = new SqlConnection(dp.ConnectionStringLOSA);
+                SqlConnection con = new SqlConnection(dp.ConnectionStringRRHH);
                 con.Open();
                 string sql = @"SELECT top 1 id, 
                                        nombre, 
@@ -95,7 +95,7 @@ namespace LOSA.Clases
                                        ADUser,
                                        super_user,
                                        [notificaciones_activas]
-                                FROM [ACS].dbo.conf_usuarios 
+                                FROM [RRHH].dbo.conf_usuarios 
                                 where [ADUser] ='" + pUser + "'";
                 SqlCommand cmd = new SqlCommand(sql, con);
                 //cmd.CommandType = CommandType.StoredProcedure;
@@ -127,7 +127,7 @@ namespace LOSA.Clases
             try
             {
                 DataOperations dp = new DataOperations();
-                SqlConnection con = new SqlConnection(dp.ConnectionStringLOSA);
+                SqlConnection con = new SqlConnection(dp.ConnectionStringRRHH);
                 con.Open();
                 string sql = @"SELECT id, 
                                        nombre, 
@@ -136,7 +136,7 @@ namespace LOSA.Clases
                                        tipo,
                                        super_user,
                                        [notificaciones_activas]
-                                FROM [ACS].dbo.conf_usuarios 
+                                FROM [RRHH].[dbo].[conf_usuarios] 
                                 where id =" + pId;
                 SqlCommand cmd = new SqlCommand(sql, con);
                 //cmd.CommandType = CommandType.StoredProcedure;
@@ -169,7 +169,7 @@ namespace LOSA.Clases
             try
             {
                 DataOperations dp = new DataOperations();
-                SqlConnection con = new SqlConnection(dp.ConnectionStringCostos);
+                SqlConnection con = new SqlConnection(dp.ConnectionStringRRHH);
                 con.Open();
                 string sql = "sp_get_nivel_acceso_for_user";
                 SqlCommand cmd = new SqlCommand(sql, con);
@@ -193,7 +193,7 @@ namespace LOSA.Clases
             try
             {
                 DataOperations dp = new DataOperations();
-                SqlConnection Conn = new SqlConnection(dp.ConnectionStringCostos);
+                SqlConnection Conn = new SqlConnection(dp.ConnectionStringRRHH);
                 Conn.Open();
                 string sql = @"SELECT count(*)
                                 FROM [dbo].conf_usuario_ventanas vv 

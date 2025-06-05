@@ -44,7 +44,7 @@ namespace LOSA.Tools
             {
                 DataOperations dp = new DataOperations();
 
-                using (SqlConnection cnx = new SqlConnection(dp.ConnectionStringLOSA))
+                using (SqlConnection cnx = new SqlConnection(dp.ConnectionStringRRHH))
                 {
                     SqlDataAdapter da = new SqlDataAdapter("sp_ALOSY_getnotificaciones",cnx);
                     da.SelectCommand.CommandType = CommandType.StoredProcedure;
@@ -70,7 +70,7 @@ namespace LOSA.Tools
             {
                 DataOperations dp = new DataOperations();
 
-                using (SqlConnection cnx = new SqlConnection(dp.ConnectionStringLOSA))
+                using (SqlConnection cnx = new SqlConnection(dp.ConnectionStringRRHH))
                 {
                     SqlDataAdapter da = new SqlDataAdapter("sp_ALOSY_getnotificaciones", cnx);
                     da.SelectCommand.CommandType = CommandType.StoredProcedure;

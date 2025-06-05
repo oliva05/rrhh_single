@@ -205,9 +205,9 @@ namespace LOSA
                     break;
                 case GrupoUser.GrupoUsuario.Administradores:
                     tabOpciones.SelectedTabPageIndex = Convert.ToInt32(pUser.GrupoUsuario.GrupoUsuarioActivo);
-                    tabOpciones.TabPages[i].PageVisible = true;
-                    tabOpciones.TabPages[11].PageVisible = true;
-                    tabOpciones.TabPages[13].PageVisible = true;//Tab de reportes
+                    //tabOpciones.TabPages[i].PageVisible = true;
+                    //tabOpciones.TabPages[11].PageVisible = true;
+                    //tabOpciones.TabPages[13].PageVisible = true;//Tab de reportes
                     //tabOpciones.TabPages[6].PageVisible = true;
                     idNivel = pUser.idNivelAcceso(pUser.Id, 7);//7 = ALOSY
                     switch (idNivel)
@@ -224,18 +224,18 @@ namespace LOSA
                             break;
                         case 4://Depth With Delta
                         case 5://Depth Without Delta
-                            tabOpciones.TabPages[0].PageVisible = true;
-                            tabOpciones.TabPages[1].PageVisible = true;
-                            tabOpciones.TabPages[2].PageVisible = true;
-                            tabOpciones.TabPages[3].PageVisible = true;
-                            tabOpciones.TabPages[4].PageVisible = true;
-                            tabOpciones.TabPages[5].PageVisible = true;
+                            //tabOpciones.TabPages[0].PageVisible = true;
+                            //tabOpciones.TabPages[1].PageVisible = true;
+                            //tabOpciones.TabPages[2].PageVisible = true;
+                            //tabOpciones.TabPages[3].PageVisible = true;
+                            //tabOpciones.TabPages[4].PageVisible = true;
+                            //tabOpciones.TabPages[5].PageVisible = true;
                             tabOpciones.TabPages[6].PageVisible = true;
-                            tabOpciones.TabPages[7].PageVisible = true;
-                            tabOpciones.TabPages[8].PageVisible = true;
-                            tabOpciones.TabPages[9].PageVisible = true;
-                            tabOpciones.TabPages[10].PageVisible = true;
-                            tabOpciones.TabPages[12].PageVisible = true;
+                            //tabOpciones.TabPages[7].PageVisible = true;
+                            //tabOpciones.TabPages[8].PageVisible = true;
+                            //tabOpciones.TabPages[9].PageVisible = true;
+                            //tabOpciones.TabPages[10].PageVisible = true;
+                            //tabOpciones.TabPages[12].PageVisible = true;
                             break;
                         default:
                             tabOpciones.SelectedTabPageIndex = Convert.ToInt32(pUser.GrupoUsuario.GrupoUsuarioActivo);
@@ -1777,11 +1777,11 @@ namespace LOSA
                 int group = 0;
                 string Query = @"SELECT 
                                       [id_group]
-                                  FROM [ACS].[dbo].[conf_usuarios]
+                                  FROM [RRHH].[dbo].[conf_usuarios]
                                   where id = " + ActiveUserCode;
                 DataOperations dp = new DataOperations();
 
-                SqlConnection cn = new SqlConnection(dp.ConnectionStringCostos);
+                SqlConnection cn = new SqlConnection(dp.ConnectionStringRRHH);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand(Query, cn);
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -3986,11 +3986,11 @@ namespace LOSA
                 int group = 0;
                 string Query = @"SELECT 
                                       [id_group]
-                                  FROM [ACS].[dbo].[conf_usuarios]
+                                  FROM [RRHH].[dbo].[conf_usuarios]
                                   where id = " + ActiveUserCode;
                 DataOperations dp = new DataOperations();
 
-                SqlConnection cn = new SqlConnection(dp.ConnectionStringCostos);
+                SqlConnection cn = new SqlConnection(dp.ConnectionStringRRHH);
                 cn.Open();
                 SqlCommand cmd = new SqlCommand(Query, cn);
                 SqlDataReader dr = cmd.ExecuteReader();

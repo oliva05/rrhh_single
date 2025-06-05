@@ -31,7 +31,7 @@ namespace ACS.Classes
                                                    user Id=" + Globals.Bas_DB_User + @";
                                                    Password=" + Globals.Bas_DB_Pass + ";";
 
-      internal string ConnectionStringLOSA = @"Server=" + Globals.LOSA_ServerName + @";
+        internal string ConnectionStringLOSA = @"Server=" + Globals.LOSA_ServerName + @";
                                                    Database=" + Globals.LOSA_ActiveDB + @";
                                                    user Id=" + Globals.LOSA_DB_User + @";
                                                    Password=" + Globals.LOSA_DB_Pass + ";";
@@ -109,7 +109,7 @@ namespace ACS.Classes
         internal string ConnectionStringRRHH = @"Server=" + Globals.RRHH_ServerName + @";
                                                    Database=" + Globals.RRHH_ActiveDB + @";
                                                    user Id=" + Globals.RRHH_DB_User + @";
-                                                   Password=" + Globals.RRHH_DB_Pass + ";";
+                                                   Password=" + Globals.RRHH_DB_Pass;
 
         internal string ConnectionStringCafeteria = @"Server=" + Globals.cafeteria_ServerAddress + @";
                                                  Port=5432;
@@ -442,7 +442,7 @@ namespace ACS.Classes
             DateTime val = DateTime.Now;
             try
             {
-                SqlConnection con = new SqlConnection(ConnectionStringLOSA);
+                SqlConnection con = new SqlConnection(ConnectionStringRRHH);
                 con.Open();
                 string sql = @"SELECT getdate()";
                 SqlCommand cmd = new SqlCommand(sql, con);
@@ -503,7 +503,7 @@ namespace ACS.Classes
             try
             {
                 string sql = "select CURRENT_TIMESTAMP";
-                SqlConnection conn = new SqlConnection(ConnectionStringCostos);
+                SqlConnection conn = new SqlConnection(ConnectionStringRRHH);
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 date = Convert.ToDateTime(cmd.ExecuteScalar());

@@ -220,12 +220,19 @@ namespace ACS.Classes
         public static string LOSA_DB_User = "sa";
         public static string LOSA_DB_Pass = " Aq4x_3Fj2#";
 
+        ////RRHH
+        //public static string RRHH_ServerAddress = "173.208.156.233";
+        //public static string RRHH_ServerName = "173.208.156.233";
+        //public static string RRHH_ActiveDB = "RRHH"; //BASE de Prueba 
+        //public static string RRHH_DB_User = "usrRRHH";
+        //public static string RRHH_DB_Pass = "Aq4x_3Fj2#";
+
         //RRHH
-        public static string RRHH_ServerAddress = "7L12TV3";
-        public static string RRHH_ServerName = "7L12TV3";
+        public static string RRHH_ServerAddress = "173.208.156.233";
+        public static string RRHH_ServerName = "173.208.156.233";
         public static string RRHH_ActiveDB = "RRHH"; //BASE de Prueba 
-        public static string RRHH_DB_User = "sa";
-        public static string RRHH_DB_Pass = " Aq4x_3Fj2#";
+        public static string RRHH_DB_User = "usrRRHH";
+        public static string RRHH_DB_Pass = "Aq4x_3Fj2#";
 
         // APMS(Aquafeed Pocess Management System)
         public static string APMS_Server = @"AQFSVR008\AQFSVR008";

@@ -25,7 +25,7 @@ namespace LOSA
             string name_ = Environment.MachineName.ToString();
             DataOperations dp = new DataOperations();
             string query = "sp_get_verify_is_tablet_alosy";
-            SqlConnection cn = new SqlConnection(dp.ConnectionStringLOSA);
+            SqlConnection cn = new SqlConnection(dp.ConnectionStringRRHH);
             bool val = true;
             try
             {

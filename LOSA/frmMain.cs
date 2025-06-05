@@ -104,7 +104,7 @@ namespace LOSA
 
                 //MessageBox.Show("Exito");
                 DataOperations dp = new DataOperations();
-                SqlConnection con = new SqlConnection(dp.ConnectionStringLOSA);
+                SqlConnection con = new SqlConnection(dp.ConnectionStringRRHH);
 
                 int TiempoP = 300;
                 //administracion.Huellas.frmProcesando frmProceso = new administracion.Huellas.frmProcesando();
@@ -143,7 +143,7 @@ namespace LOSA
                     try
                     {
                         //Guardar Log de Inicio de Sesion
-                        SqlConnection conn = new SqlConnection(dp.ConnectionStringLOSA);
+                        SqlConnection conn = new SqlConnection(dp.ConnectionStringRRHH);
                         conn.Open();
                         SqlCommand cmd = new SqlCommand("sp_insert_login_user_alosy", conn);
                         cmd.CommandType = CommandType.StoredProcedure;

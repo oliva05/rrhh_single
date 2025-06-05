@@ -5600,6 +5600,7 @@
             this.xtraTabPage1.Controls.Add(this.simpleButton43);
             this.xtraTabPage1.Controls.Add(this.simpleButton44);
             this.xtraTabPage1.Name = "xtraTabPage1";
+            this.xtraTabPage1.PageVisible = false;
             this.xtraTabPage1.Size = new System.Drawing.Size(1153, 523);
             this.xtraTabPage1.Text = "General";
             // 
@@ -6167,6 +6168,7 @@
             this.navBarGroup24.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem362)});
             this.navBarGroup24.Name = "navBarGroup24";
+            this.navBarGroup24.Visible = false;
             // 
             // navBarItem362
             // 
@@ -10615,6 +10617,7 @@
             this.TabReportes_.Controls.Add(this.navBarControl7);
             this.TabReportes_.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("TabReportes_.ImageOptions.Image")));
             this.TabReportes_.Name = "TabReportes_";
+            this.TabReportes_.PageVisible = false;
             this.TabReportes_.Size = new System.Drawing.Size(1155, 553);
             this.TabReportes_.Text = "Reportes";
             // 
