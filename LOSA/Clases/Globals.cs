@@ -225,7 +225,7 @@ namespace ACS.Classes
         public static string RRHH_ServerName = "7L12TV3";
         public static string RRHH_ActiveDB = "RRHH"; //BASE de Prueba 
         public static string RRHH_DB_User = "sa";
-        public static string RRHH_DB_Pass = " Aq4x_3Fj2#";
+        public static string RRHH_DB_Pass = "Aq4x_3Fj2#";
 
         // APMS(Aquafeed Pocess Management System)
         public static string APMS_Server = @"AQFSVR008\AQFSVR008";
